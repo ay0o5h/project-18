@@ -1,0 +1,268 @@
+.p, .main-navbar .overlay .text p, .about .content-dev .text p, .footer p {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 10px;
+  width: 50%;
+}
+
+.h, .main-navbar .overlay .text h1, .about .content-dev .text h3, .footer h3, .footer h4 {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-navbar {
+  background-image: url("01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main-navbar .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+}
+
+.main-navbar .overlay .navbar {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.main-navbar .overlay .navbar .nav-item a {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+  text-transform: capitalize;
+}
+
+.main-navbar .overlay .navbar .nav-item .active {
+  border-bottom: 1px solid #3396C9;
+  width: 0;
+}
+
+.main-navbar .overlay .text {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  width: 70%;
+  padding: 5%;
+  margin-left: 15%;
+  height: 82vh;
+}
+
+.main-navbar .overlay .text h1 {
+  -webkit-text-decoration: bold;
+          text-decoration: bold;
+  font-size: 50px;
+  width: 70%;
+}
+
+.main-navbar .overlay .text .btn {
+  background-color: #3396C9;
+  color: white;
+  padding: 2%;
+  margin: 50px auto;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: capitalize;
+  border: none;
+  outline: unset;
+}
+
+.main-navbar .overlay .icons {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-right: 2px solid yellow;
+  padding-right: 6.9%;
+}
+
+.main-navbar .overlay .icons i {
+  display: block;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 10px auto;
+}
+
+.main-navbar .overlay .call-us {
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px #1B1B2F;
+          box-shadow: 3px 3px #1B1B2F;
+  padding: 2%;
+  float: right;
+  margin-right: 20%;
+  margin-top: -4%;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+.main-navbar .overlay .call-us span {
+  color: yellow;
+}
+
+.main-navbar .overlay .call-us i {
+  color: yellow;
+  background-color: #3396C9;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.about {
+  position: relative;
+}
+
+.about .row {
+  margin-right: 0;
+}
+
+.about .content-dev {
+  position: relative;
+  margin: 20% auto;
+}
+
+.about .content-dev .text {
+  background-color: #3396C9;
+  padding: 10% 0 10% 0;
+  width: 70%;
+  margin-left: 45%;
+}
+
+.about .content-dev .text p {
+  position: relative;
+  left: 30%;
+}
+
+.about .content-dev .text h3 {
+  position: relative;
+  left: 30%;
+}
+
+.about .content-dev .image {
+  position: absolute;
+  left: 5%;
+  top: -15%;
+  z-index: 2;
+}
+
+.about .dot_img {
+  position: absolute;
+  right: 0;
+  top: 30%;
+}
+
+.footer {
+  background-color: #1848A0;
+  padding: 5%;
+  margin-top: 30px;
+  position: relative;
+}
+
+.footer h3 {
+  margin: 10px 0 5% 15%;
+}
+
+.footer i {
+  color: #3396C9;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 15px auto;
+}
+
+.footer .yellow_tringle {
+  position: absolute;
+  right: 5%;
+  top: -13%;
+  -webkit-transform: rotate(140deg);
+          transform: rotate(140deg);
+  float: right;
+}
+
+.footer .blue_tringle {
+  margin-top: 40px;
+  -webkit-transform: rotate(141deg);
+          transform: rotate(141deg);
+}
+
+@media (max-width: 768px) {
+  .main-navbar {
+    height: 70vh;
+  }
+  .main-navbar .overlay {
+    height: 70vh;
+  }
+  .main-navbar .overlay .text {
+    height: 58vh;
+  }
+  .main-navbar .overlay .text h1 {
+    font-size: 40px;
+    width: 75%;
+  }
+  .main-navbar .overlay .icons {
+    top: 16%;
+    padding-right: 4.4%;
+  }
+  .about .content-dev .image {
+    top: -10%;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-navbar {
+    height: 70vh;
+  }
+  .main-navbar .overlay .navbar {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .main-navbar .overlay .text {
+    width: 80%;
+    margin-left: 10%;
+    height: 54.5vh;
+  }
+  .main-navbar .overlay .text h1 {
+    font-size: 30px;
+    width: 80%;
+  }
+  .main-navbar .overlay .text p {
+    width: 70%;
+  }
+  .main-navbar .overlay .icons {
+    left: 1%;
+    top: 20%;
+    padding-right: 2%;
+  }
+  .main-navbar .overlay .icons .fa-2x {
+    font-size: 0.9em;
+  }
+  .about .content-dev .image {
+    top: -5%;
+  }
+  .about .dot_img {
+    display: none;
+  }
+  .footer .yellow_tringle {
+    top: -10%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

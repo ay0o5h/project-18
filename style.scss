@@ -1,0 +1,281 @@
+$maincolor:#3396C9;
+$secondcolor:white;
+$mainfont:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+.p {
+    color:$secondcolor;
+    font-family:$mainfont;
+   font-size: 10px; 
+   width: 50%;
+}
+.h {
+    color:$secondcolor;
+    font-family:$mainfont;
+    text-transform: capitalize; 
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+// start navbar
+.main-navbar {
+    background-image: url('01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    .overlay {
+        background-color: rgba(0,0,0, 0.6);
+        position: absolute;
+        top:0;
+        left:0;
+        right: 0;
+        bottom:0;
+        height: 100vh;
+         .navbar{
+             border-right: 1px solid $secondcolor;
+             border-left: 1px solid$secondcolor;
+             width: 70%;
+             margin-left: 15%;
+        .nav-item {
+            a {
+                color:$secondcolor;
+                font-family: $mainfont;
+                font-size:large;
+                text-transform: capitalize;
+            }
+            .active{
+                border-bottom: 1px solid $maincolor;
+                width: 0;
+            }
+        }
+    }
+       .text {
+             border-right: 1px solid $secondcolor;
+             border-left: 1px solid $secondcolor;
+             width: 70%;
+             padding:5%;
+             margin-left: 15%;
+             height: 82vh;
+             h1 {
+                @extend .h;
+                text-decoration:bold ;
+                font-size: 50px;;
+                width: 70%;
+             }
+             p {
+               @extend .p;
+             }
+             .btn {
+                 background-color:$maincolor;
+                 color:$secondcolor;
+                 padding:2%;
+                 margin: 50px auto;
+                 font-family: $mainfont;
+                text-transform: capitalize;
+                border:none;
+                outline:unset
+             }
+         }
+         .icons {
+            position: absolute;
+            top:30%;
+            left:5%;
+            justify-content: center;
+            text-align: center;
+            border-right:2px solid yellow;
+            padding-right: 6.9%;
+             i {
+                 display: block;
+                 color:$secondcolor;
+                 border:1px solid $secondcolor;
+                 border-radius: 50%;
+                 padding: 5px;
+                 margin: 10px auto;  
+             }
+         } 
+         .call-us {
+            background-color: rgba($color: #ffffff, $alpha: 1.0);
+            border-radius: 10px;
+            box-shadow: 3px 3px #1B1B2F;
+            padding: 2%;
+            float: right;
+            margin-right: 20%;
+            margin-top: -4%;
+            color: black;
+            font-family: $mainfont;
+                text-transform: capitalize;
+            span {
+                color:yellow;
+            }
+            i {
+                color:yellow;
+                background-color:$maincolor;
+                border:1px solid $secondcolor;
+                border-radius: 50%;
+                padding: 5px;
+            }
+        }
+    }
+}
+// end navbar
+// start about us
+.about {
+    position: relative;
+    .row {
+        margin-right: 0;
+    }
+    .content-dev {
+        position: relative;
+        margin: 20% auto;
+        .text {
+            background-color:$maincolor ;
+            padding: 10% 0 10% 0;
+            width: 70%;
+            margin-left: 45%;
+            p {
+                @extend .p;
+                position: relative;
+               left: 30%;
+            }
+            h3 {
+                @extend .h;
+                position: relative;
+                left: 30%;
+            }
+        }
+        .image {
+            position: absolute;
+            left:5%;
+            top:-15%;
+            z-index: 2;
+        } 
+    }
+   .dot_img {
+    position: absolute;
+    right:0;
+    top:30%;
+   }
+}
+// end about us
+// start footer
+.footer{
+    background-color: #1848A0;
+    padding: 5%;
+    margin-top: 30px ;
+    position: relative;
+    h3 {
+        @extend .h;
+        margin: 10px 0 5% 15%;
+    }
+    h4 {
+        @extend .h;
+    }
+    p {
+        @extend .p;
+    }
+    i {
+        color :$maincolor;
+        background-color: $secondcolor;
+        border:1px solid $secondcolor;
+        border-radius: 50%;
+        padding: 10px;
+        margin: 15px auto; 
+    }
+    .yellow_tringle {
+        position: absolute;
+        right:5%;
+        top:-13%; 
+        transform: rotate(140deg);
+        float: right;
+    }
+    .blue_tringle {
+       margin-top: 40px;
+        transform: rotate(141deg);
+    }
+} 
+// end footer
+// start media query in ipad screen
+@media (max-width:768px){
+    // start media query of navbar in 
+    .main-navbar {
+        height: 70vh;
+        .overlay {
+            height: 70vh;
+            .text {
+                height: 58vh;
+                h1 {
+                    font-size:40px;
+                    width:75%;
+                }
+            }
+            .icons {
+                top:16%;
+                padding-right: 4.4%;
+             }
+        }
+    } 
+    // end media query of navbar
+     // start media query of about us 
+     .about {
+        .content-dev {           
+            .image {              
+                top:-10%;               
+            }    
+        }      
+    }
+   // end media query of about us 
+}
+// end media query in ipad screen
+// start media query in mobile screen
+@media (max-width:400px){
+    // start media query of navbar
+    .main-navbar {
+        height: 70vh;
+        .overlay {
+            .navbar{
+                width: 80%;
+                margin-left: 10%;
+            }
+            .text {
+                width: 80%;
+                margin-left: 10%;
+                height: 54.5vh;
+                h1 {
+                    font-size:30px;
+                    width:80%;
+                }
+                p{
+                    width:70%;
+                }
+            }
+            .icons {
+                left:1%;
+                top:20%;
+                padding-right: 2%;
+                .fa-2x {
+                    font-size: 0.9em;
+                }
+             }
+        }
+    } 
+  // end media query of navbar
+   // start media query of about us 
+   .about {
+    .content-dev {       
+        .image {           
+            top:-5%;            
+        }       
+    }
+    .dot_img {
+        display: none;
+       }
+}
+// end media query of about us 
+// start media query of footer 
+.footer{
+    .yellow_tringle {
+        top:-10%; 
+    }
+} 
+// end media query of footer
+}
+// end media query in mobile screen
